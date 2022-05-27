@@ -1,0 +1,13 @@
+{
+  "name": "node_web_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "moment": "^2.27.0",
+    "nodemon": "^2.0.4"
+  }
+}
