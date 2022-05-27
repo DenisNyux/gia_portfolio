@@ -1,0 +1,205 @@
+.head {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    height: 5%;
+    margin-bottom: 3%;
+}
+
+.logo {
+    font-family: 'Open Sans';
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #212121;
+}
+
+.nav-element {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    justify-content: space-between;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #212121;
+}
+
+.nav-element a {
+    font-family: 'Open Sans';
+    text-decoration: none;
+    color: #212121;
+}
+
+.search {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #212121
+}
+
+body {
+    margin: 0%;
+}
+
+.body-start {
+    background: url(images/rectangle_1_4598.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.body-start h1 {
+    font-family: 'Open Sans';
+    font-size: 60px;
+    line-height: 22px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
+
+.body-start p {
+    font-family: 'Open Sans';
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+.buttons .no-bckg {
+    width: 220px;
+    height: 70px;
+    border: 3px solid #f8f8f8;
+    background: none;
+}
+
+.buttons .no-bckg p {
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
+
+.buttons .bckg {
+    width: 220px;
+    height: 70px;
+    background-color: #00897b;
+    border: none;
+}
+ 
+.buttons .bckg p {
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1024px){
+    .head {
+        display: flex;
+        flex-flow: column;
+        height: 40%;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 3%;
+    }
+
+    .nav-element {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 80%;
+    }
+
+    .body-start h1 {
+        font-family: 'Open Sans';
+        font-size: 25px;
+        line-height: 22px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+    }
+    
+    .body-start p {
+        font-family: 'Open Sans';
+        font-size: 11px;
+        line-height: 22px;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+    }
+    
+    .buttons {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        height: 20%;
+    }
+
+    .buttons .bckg {
+        width: 110px;
+        height: 35px;
+        background-color: #00897b;
+        border: none;
+    }
+
+    .buttons .bckg p {
+        font-family: Roboto;
+        font-size: 10px;
+        line-height: 11px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+    }
+    
+
+    .buttons .no-bckg {
+        width: 110px;
+        height: 35px;
+        border: 3px solid #f8f8f8;
+        background: none;
+    }
+    
+    .buttons .no-bckg p {
+        font-family: Roboto;
+        font-size: 10px;
+        line-height: 11px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+    }
+    
+}
