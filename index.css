@@ -4,6 +4,10 @@
     padding-right: 30px;
 }
 
+.head h1 {
+    margin-bottom: 3%;
+}
+
 .content-page-inactive {
     display: none;
 }
