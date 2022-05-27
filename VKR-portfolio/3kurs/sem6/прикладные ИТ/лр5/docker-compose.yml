@@ -1,0 +1,20 @@
+version: '2'
+
+
+services:
+    nginx-proxy:
+        image: jwilder/nginx-proxy
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - /var/run/docker.sock:/tmp/docker.sock:ro
+    whoami:
+        image: jwilder/whoami
+        enviroment:
+            - VIRTAL_HOST=whoami.denisnyux.ru
+    whoami2:
+        image: jwilder/whoami
+        enviroment:
+            - VIRTAL_HOST=whoami2.denisnyux.ru
+    

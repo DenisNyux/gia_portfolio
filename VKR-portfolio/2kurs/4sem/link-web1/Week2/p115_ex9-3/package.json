@@ -1,0 +1,16 @@
+{
+  "name": "exercise_9-3",
+  "version": "1.0.0",
+  "description": "exercise",
+  "main": "index.js",
+  "author": "Denis",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "faker": "^4.1.0",
+    "moment": "^2.24.0"
+  }
+}

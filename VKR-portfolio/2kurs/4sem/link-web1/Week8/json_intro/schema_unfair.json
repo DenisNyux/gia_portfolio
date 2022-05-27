@@ -1,0 +1,171 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "required": [
+      "table"
+    ],
+    "properties": {
+      "table": {
+        "$id": "#/properties/table",
+        "type": "object",
+        "title": "The Table Schema",
+        "required": [
+          "students"
+        ],
+        "properties": {
+          "students": {
+            "$id": "#/properties/table/properties/students",
+            "type": "object",
+            "title": "The Students Schema",
+            "required": [
+              "Ivanov",
+              "Petrova",
+              "Sidorenko"
+            ],
+            "properties": {
+              "Ivanov": {
+                "$id": "#/properties/table/properties/students/properties/Ivanov",
+                "type": "object",
+                "title": "The Ivanov Schema",
+                "required": [
+                  "multimedia",
+                  "web-design",
+                  "graphics"
+                ],
+                "properties": {
+                  "multimedia": {
+                    "$id": "#/properties/table/properties/students/properties/Ivanov/properties/multimedia",
+                    "type": "integer",
+                    "title": "The Multimedia Schema",
+                    "default": 0,
+                    "examples": [
+                      3
+                    ]
+                  },
+                  "web-design": {
+                    "$id": "#/properties/table/properties/students/properties/Ivanov/properties/web-design",
+                    "type": "integer",
+                    "title": "The Web-design Schema",
+                    "default": 0,
+                    "examples": [
+                      3
+                    ]
+                  },
+                  "graphics": {
+                    "$id": "#/properties/table/properties/students/properties/Ivanov/properties/graphics",
+                    "type": "integer",
+                    "title": "The Graphics Schema",
+                    "default": 0,
+                    "examples": [
+                      5
+                    ]
+                  }
+                }
+              },
+              "Petrova": {
+                "$id": "#/properties/table/properties/students/properties/Petrova",
+                "type": "object",
+                "title": "The Petrova Schema",
+                "required": [
+                  "multimedia",
+                  "web-design",
+                  "graphics",
+                  "logic"
+                ],
+                "properties": {
+                  "multimedia": {
+                    "$id": "#/properties/table/properties/students/properties/Petrova/properties/multimedia",
+                    "type": "integer",
+                    "title": "The Multimedia Schema",
+                    "default": 0,
+                    "examples": [
+                      3
+                    ]
+                  },
+                  "web-design": {
+                    "$id": "#/properties/table/properties/students/properties/Petrova/properties/web-design",
+                    "type": "integer",
+                    "title": "The Web-design Schema",
+                    "default": 0,
+                    "examples": [
+                      4
+                    ]
+                  },
+                  "graphics": {
+                    "$id": "#/properties/table/properties/students/properties/Petrova/properties/graphics",
+                    "type": "integer",
+                    "title": "The Graphics Schema",
+                    "default": 0,
+                    "examples": [
+                      5
+                    ]
+                  },
+                  "logic": {
+                    "$id": "#/properties/table/properties/students/properties/Petrova/properties/logic",
+                    "type": "integer",
+                    "title": "The Logic Schema",
+                    "default": 0,
+                    "examples": [
+                      5
+                    ]
+                  }
+                }
+              },
+              "Sidorenko": {
+                "$id": "#/properties/table/properties/students/properties/Sidorenko",
+                "type": "object",
+                "title": "The Sidorenko Schema",
+                "required": [
+                  "multimedia",
+                  "web-design",
+                  "graphics",
+                  "logic"
+                ],
+                "properties": {
+                  "multimedia": {
+                    "$id": "#/properties/table/properties/students/properties/Sidorenko/properties/multimedia",
+                    "type": "integer",
+                    "title": "The Multimedia Schema",
+                    "default": 0,
+                    "examples": [
+                      3
+                    ]
+                  },
+                  "web-design": {
+                    "$id": "#/properties/table/properties/students/properties/Sidorenko/properties/web-design",
+                    "type": "integer",
+                    "title": "The Web-design Schema",
+                    "default": 0,
+                    "examples": [
+                      4
+                    ]
+                  },
+                  "graphics": {
+                    "$id": "#/properties/table/properties/students/properties/Sidorenko/properties/graphics",
+                    "type": "integer",
+                    "title": "The Graphics Schema",
+                    "default": 0,
+                    "examples": [
+                      5
+                    ]
+                  },
+                  "logic": {
+                    "$id": "#/properties/table/properties/students/properties/Sidorenko/properties/logic",
+                    "type": "integer",
+                    "title": "The Logic Schema",
+                    "default": 0,
+                    "examples": [
+                      4
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

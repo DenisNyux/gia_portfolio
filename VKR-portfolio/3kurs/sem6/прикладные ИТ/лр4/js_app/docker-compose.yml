@@ -1,0 +1,27 @@
+version: "3"
+services:
+    first:
+        image: "node:alpine"
+        working_dir: /home/node/app
+        volumes: 
+            - .:/home/node/app
+        environment:
+            - NODE_ENV=production 
+            - PORT=8000
+            - MESSAGE="Hello from Enviroment"
+        ports: 
+            - "8000:8000"
+        command: "npm start"
+    
+    second:
+        image: "node:alpine"
+        working_dir: /home/node/app
+        volumes: 
+            - .:/home/node/app
+        environment: 
+            - NODE_ENV=production
+            - PORT=8001
+            - MESSAGE="Hello from Enviroment"
+        ports: 
+            - "8001:8001"
+        command: "npm start"

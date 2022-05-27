@@ -1,0 +1,1 @@
+[1-6 Изучить инструкцию по охране труда программиста](http://prom-nadzor.ru/content/instrukciya-po-ohrane-truda-dlya-programmista-pevm)

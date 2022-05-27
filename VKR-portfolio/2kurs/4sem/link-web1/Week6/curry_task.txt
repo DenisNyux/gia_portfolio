@@ -1,0 +1,1 @@
+curry task (and kodaktor.ru/func tasks) is (are) in week5 folder

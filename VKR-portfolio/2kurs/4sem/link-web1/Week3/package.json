@@ -1,0 +1,9 @@
+{
+  "name": "w3_tasks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "goss_concat": "^1.0.3"
+  }
+}

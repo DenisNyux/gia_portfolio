@@ -1,0 +1,62 @@
+body {
+    font-family: system-ui;
+}
+
+
+.head {
+    display: flex;
+    background: cornsilk;
+    height: 200px;
+    max-height: 400px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 2;
+}
+
+.head .logo {
+    width: 200px;
+    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    background: cyan;
+    margin-left: 3%;
+}
+
+.head .links-social {
+    margin-right: 3%;
+}
+
+.navbar{
+    background: cornflowerblue;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.page {
+    display: flex;
+    background: darkgrey;
+}
+
+.page .bar-links{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(247, 130, 153);
+}
+.bar-links a {
+    margin-bottom: 30px;
+}
+
+.content-area {
+    width: 80%;
+    background: grey;
+}

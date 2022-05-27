@@ -1,0 +1,46 @@
+% "Лабораторная работа 7"
+
+\documentclass[a4paper,12pt]{article} % тип документа
+
+%  Русский язык
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+\usepackage{wasysym}
+\usepackage{hyperref} % гиперссылки
+%Заговолок
+\author{Нюхалов Денис}
+\title{Лабораторная работа №7\\"Особенности технологии создания текста с формулами"}
+\date{Декабрь 2020}
+
+
+\begin{document} % начало документа
+
+\maketitle
+\newpage
+\section{Формулы}
+
+\begin{equation}
+\int \frac{dx}{\ln x}=\ln|\ln x|+\sum_{i=1}^\infty \frac{(\ln x)^i}{i\cdot i!}
+\end{equation}
+\begin{equation}
+\int \frac{dx}{(\ln x)^n}=-\frac{x}{(n-1)(\ln x)^{n-1}}+\frac{1}{n-1}\int \frac{dx}{(\ln x)^{n-1}}\text{ для } n\neq 1
+\end{equation}
+\begin{equation}
+\int x^m \ln x dx=x^{m+1}\Bigg( \frac{\ln x}{m+1}-\frac{1}{(m+1)^2}\Bigg) \text{ для } m \neq -1
+\end{equation}
+\begin{equation}
+\int x^m(\ln x)^n dx=\frac{x^{m+1}(\ln x)^n}{m+1}-\frac{n}{m+1}\int x^m(\ln x)^{n-1}dx \text{ для } m \neq -1
+\end{equation}
+\begin{equation}
+\int\frac{(\ln x)^n dx}{x}=\frac{(\ln x)^{n+1}}{n+1} \text{ для } n\neq -1
+\end{equation}
+\begin{equation}
+\int \frac{\ln x dx}{x^m}=-\frac{\ln x}{(m-1)x^{m-1}}-\frac{1}{(m-1)^2 x^{m-1}} \text{ для } m \neq 1
+\end{equation}
+\begin{equation}
+\int \frac{(\ln x)^n dx}{x^m}=-\frac{(ln x)^n}{(m-1)x^{m-1}}+\frac{n}{m-1}\int\frac{(ln x)^{n-1}dx}{x^m} \text{ для } m\neq 1 
+\end{equation}
+\end{document}

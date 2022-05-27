@@ -1,0 +1,139 @@
+% "Лабораторная работа 2"
+
+\documentclass[a4paper,14pt]{article} % тип документа
+
+% report, book
+
+%  Русский язык
+
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+
+
+\usepackage{wasysym}
+
+\usepackage{hyperref}
+
+%Заговолок
+\author{Нюхалов Денис}
+\title{Занятие 7. Работа на паре.}
+\date{Декабрь 2020}
+
+
+\begin{document} % начало документа
+\maketitle
+\newpage
+\section{Изменения шрифта}
+
+
+Стандарт\\
+\tiny tiny\\
+\small small\\
+\scriptsize scriptsize\\
+\footnotesize footnotesize\\
+\normalsize normalsize\\
+\large large\\
+\Large Large\\
+\LARGE LARGE\\
+\huge Huge\\
+
+
+
+
+
+\section{Гиперссылки}
+
+Ссылка на moodle\\
+\href{https://moodle.herzen.spb.ru/}{Moodle main page}
+
+\section{Выравнивание}
+
+\begin{flushright}
+Выравнивание по правому краю
+\end{flushright}
+
+\begin{center}
+Выравнивание по центру
+\end{center}
+
+\begin{flushleft}
+Выравнивание по левому краю
+\end{flushleft}
+
+\section{Сноски}
+Текст к сноске
+\footnote{Сноска на что то}
+
+\section{Формулы}
+Формула в тексте $a+b$, сумма a и b\\
+Формула на новой строчке $$a^2 + b^2 = c^2$$\\
+Формула с ссылкой\\
+\begin{equation}
+    \label{pif}
+    a^2 + b^2 = c^2
+\end{equation}
+Ссылка на формулу \eqref{pif} в тексте\\
+
+\subsection{Верхние и нижние индексы в формулах}
+$m_1$\\
+$m_{12}$\\
+$m^2$\\
+$m^{22}$\\
+
+\subsection{Стандартные функции в формулах}
+$\sin(x)$\\
+$\sin x$\\
+$\arctg(x) = \sqrt(3)$\\
+$\arctg(x) = \sqrt[5](3)$\\
+$\log_{x-1}{x^2+5*x-4}$
+
+\section{Функции}
+Формула суммы некоторых значений $\sum_{i=1}^{n}a_i+b_i$ некоторых значений\\
+\[ \sum_{i=1}^{n}a_i+b_i \]
+\subsection{Интегралы}
+$I=\int r^2dm$ интегрирование по dm.\\
+$$I=\int r^2dm$$
+$$I=\int_{0}^{1} r^2dm$$
+\subsection{Знаки}
+$$3\times2=2\cdot 3\\$$
+$$1\dots n\\$$
+$$\frac{2}{4} = \frac{1}{2}\\$$
+$$\underbrace{1+2+3\dots+n}\\$$
+\section{Диакритические знаки}
+\subsection{Надстрочные знаки}
+\[\dot{x}=0\]
+\[\tilde{a}=\bar{b}\]
+\[\widetilde{Sas}=\overline{saaas}\]
+многоточие \cdots
+\subsection{Векторы}
+Вектор а имеет координаты (0,3,4)
+\[\overrightarrow(a) = (0,3,4)\]
+\[\overrightarrow(a) = \mathbf{a}\]
+\subsection{Фигурная скобка}
+\[\underbrace{1+2+\cdots+n}_{n} = N\]
+\[\overbrace{1+2+\cdots+n}_{n} = N\]
+\[\overbrace{1+2+\cdots+n}^{n} = N\]
+\subsection{Написание условия перехода над знаком}
+Команда \textbf{stackrel}\\
+Например\\
+\[(x-1)(x+1)>0 \stackrel{x>0}{\longrightarrow}(x-1)>0\]
+\section{Буквы других алфавитов}
+\[\sin \alpha=0\]
+\[\omega=\frac{2\pi}{T}\]
+непривычный вид \\
+$\epsilon$ \\
+$\phi$ \\
+как в учебниках \\
+$\varepsilon$ \\
+$\varphi$
+\subsection{Математические шрифты}
+\textbf{mathbb}
+\[x \in R\]
+\[x \in \mathbb{R}\]
+
+\end{document} % конец документа

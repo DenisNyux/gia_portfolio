@@ -1,0 +1,42 @@
+> Order := 8;
+                           Order := 8
+
+> taylor(sin(tan(x))-tan(sin(x)),x,9);
+
+                          1   7    / 9\
+                        - -- x  + O\x /
+                          30
+                                     
+> taylor(arcsin(arctan(x))-arctan(arcsin(x)),x,9);
+
+                          1   7    / 9\
+                        - -- x  + O\x /
+                          30           
+
+> taylor(sin(tan(x)),x,9);
+
+                   1  3   1   5    55   7    / 9\
+               x + - x  - -- x  - ---- x  + O\x /
+                   6      40      1008           
+
+> taylor(tan(sin(x)),x,9);
+
+                   1  3   1   5   107   7    / 9\
+               x + - x  - -- x  - ---- x  + O\x /
+                   6      40      5040           
+
+> taylor(arcsin(arctan(x)),x,9);
+
+                  1  3   13   5   341   7    / 9\
+              x - - x  + --- x  - ---- x  + O\x /
+                  6      120      5040           
+
+> taylor(arctan(arcsin(x)),x,9);
+
+                  1  3   13   5   173   7    / 9\
+              x - - x  + --- x  - ---- x  + O\x /
+                  6      120      5040           
+
+> limit((sin(tan(x))-tan(sin(x)))
+>         /(arcsin(arctan(x))-arctan(arcsin(x))),x=0);
+                               1

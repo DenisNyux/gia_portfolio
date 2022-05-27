@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE portfolio PUBLIC "---" "http://kodaktor.ru/x/unsafe_48021">
+<portfolio>
+    <competencies>
+        <competency in="HTML" value="not great, but not terrible"/>
+        <competency in="Python" value="better than HTML, but not perfect"/>
+        <competency in="CSS" value="i just can`t remember selectors"/>
+        <competency in="English" value="upper-intermediate"/>
+    </competencies>
+</portfolio>

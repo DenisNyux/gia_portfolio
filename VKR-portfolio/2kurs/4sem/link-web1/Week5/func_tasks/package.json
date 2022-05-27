@@ -1,0 +1,9 @@
+{
+  "name": "func01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "goss_concat": "^1.0.3"
+  }
+}

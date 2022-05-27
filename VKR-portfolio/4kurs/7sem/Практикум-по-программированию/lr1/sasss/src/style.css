@@ -1,0 +1,59 @@
+.flex-container {
+    display: flex;
+}
+  
+.container-full {
+    flex-direction: column;
+}
+.container-menu-page {
+    flex-direction: row;
+}
+
+
+.flex-menu {
+    width: 20%;
+    background: rgb(191, 216, 184);
+    flex-direction: column;
+}
+
+.flex-menu h3 {
+    margin-left: 15px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    margin-bottom: 30px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.text-content p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.text-content h3 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.flex-page {
+    width: 80%;
+    background: rgb(231, 234, 181);
+}
+ 
+.footer {
+    width: auto;
+    height: 5em;
+    text-align: center;
+    background: rgb(226, 194, 185)
+}
+.header {
+    width: auto;
+    height: 1.5em;
+    background: rgb(226, 194, 185);
+    text-align: center;
+}

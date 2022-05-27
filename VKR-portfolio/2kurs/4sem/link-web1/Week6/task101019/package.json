@@ -1,0 +1,9 @@
+{
+  "name": "task101019",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "goss_pause": "^1.0.1"
+  }
+}

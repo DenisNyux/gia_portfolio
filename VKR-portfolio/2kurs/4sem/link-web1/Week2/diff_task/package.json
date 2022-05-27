@@ -1,0 +1,11 @@
+{
+  "name": "diff_task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Denis",
+  "devDependencies": {
+    "diff2html-cli": "^5.1.1",
+    "nodemon": "^2.0.4"
+  }
+}

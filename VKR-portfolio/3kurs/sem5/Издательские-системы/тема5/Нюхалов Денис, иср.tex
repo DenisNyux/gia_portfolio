@@ -1,0 +1,47 @@
+% "ИСР"
+
+\documentclass[a4paper,12pt]{article} % тип документа
+
+%  Русский язык
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}		
+\usepackage[english,russian]{babel}	
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+\usepackage{wasysym}
+\usepackage{hyperref} % гиперссылки
+%Заговолок
+\author{Нюхалов Денис}
+\title{Команды для создания текстового документа в \LaTeX{}}
+\date{Декабрь 2020}
+
+
+\begin{document} % начало документа
+
+\maketitle
+\newpage
+
+\section{Основные команды}
+
+Самой первой командой является \textbackslash documentclass[]\{класс\}. Она задает стиль оформления: формат бумаги, шрифт и т.д.\\
+Основных классов документов 4:
+\begin{itemize}
+        \item article -- для статей, научных журналов, презентация, которотких отчётов, локументаций и др.
+        \item report -- для более длинных отчётов, содержащих несколько глав, небольших книжек, диссертаций.
+        \item book -- для настоящих книг
+        \item slides -- для слайдов. Использует большие буквы без засечек.
+\end{itemize}
+Тело документа находится в окружении \textbackslash begin\{document\} \textbackslash end\{document\}\\\\
+Для создания разделов и подразделов документа используются команды \textbackslash section\{\} и \textbackslash subsection\{\}\\\\
+Для переноса текста на следуюшую строку нужно использовать \textbackslash\textbackslash\\\\
+Для перехода на следующий абзац нужно поставить пустую строку.\\\\
+Для настройки абзацных отступов используется команда \textbackslash parindent=2cm\\\\
+Для создания сноски используется команда \textbackslash footnote\{\}\\\\
+Для изменения формата текста на 
+\begin{itemize}
+    \item Жирный шрифт - \textbackslash textbf\{\}
+    \item Курсив - \textbackslash textit\{\}
+    \item Подчеркнутый - \textbackslash underline\{\}
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,11 @@
+{
+  "name": "exercise_p30_2-1",
+  "version": "1.0.0",
+  "description": "'exercise'",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Denis",
+  "dependencies": {
+    "jsdoc": "^3.6.3"
+  }
+}

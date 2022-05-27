@@ -1,0 +1,1 @@
+pwd; mkdir Com; mkdir Teorie; cp t1 Teorie/t11; cp k1 Com/k11; ls -l; ls /Com; ls /Teorie 

@@ -1,0 +1,193 @@
+\documentclass[a4paper,12pt]{article} % тип документа
+
+
+%  Русский язык
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+\usepackage{wasysym}
+\usepackage{hyperref} % гиперссылки
+%Заговолок
+\author{Нюхалов Денис}
+\title{Лабораторная работа №8\\"Создание матриц средствами \LaTeX{}"}
+\date{Декабрь 2020}
+
+
+\begin{document} % начало документа
+
+\maketitle
+\newpage
+
+\section{Пример 1. Умножение матрицы на число}
+
+\textbf{Дано:} \\
+Матрица
+\begin{displaymath}
+\mathbf{A} =
+\left( \begin{array}{ccc}
+1 & 2 & 3\\
+4 & 5 & 6 
+\end{array} \right)
+\end{displaymath}
+Число $k=2$.\\
+\textbf{Найти:}\\
+Произведение матрицы на число: $A\times k=B$\\
+B -- ?\\
+\textbf{Решение:}\\
+Для того чтобы умножить матрицу А на число k нужно каждый элемент матрицы А умножить на это число.
+Таким образом, произведение матрицы А на число k есть новая матрица:
+\begin{displaymath}
+B = 2\times A = 2\times
+\begin{pmatrix}
+1 & 2 & 3\\
+4 & 5 & 6 
+\end{pmatrix}= 
+\begin{pmatrix}
+2 & 4 & 6\\
+8 & 10 & 12 
+\end{pmatrix}
+\end{displaymath}
+Ответ:
+\begin{displaymath}
+B = \begin{pmatrix}
+2 & 4 & 6\\
+8 & 10 & 12 
+\end{pmatrix}
+\end{displaymath}
+
+\section{Пример 2. Умножение матриц}
+\textbf{Дано:} \\
+Матрица
+\begin{displaymath}
+A=\begin{pmatrix}
+2 & 3 & 1\\
+-1 & 0 & 1 
+\end{pmatrix}
+B=\begin{pmatrix}
+2 & 1\\
+-1 & 1\\
+3 & -2\\
+\end{pmatrix}
+\end{displaymath}
+\textbf{Найти:}\\
+Произвидение матриц: $A\times B = C$\\
+C -- ?\\
+\textbf{Решение:}\\
+Каждый элемент матрицы $ C = A \times B$, расположенный в $i$-ой строке и $j$-ом столбе, равен сумме произведений элементов $i$-ой матрицы A на соответствующие элементы $j$-го столбца матрицы B. Строки матрицы A умножаем на столбцы матрицы B и получаем:
+\begin{displaymath}
+C=A\times B =\begin{pmatrix}
+2 & 3 & 1\\
+-1 & 0 & 1\\
+\end{pmatrix}\times
+\begin{pmatrix}
+2 & 1\\
+-1 & 1\\
+3 & -2\\
+\end{pmatrix}=
+\end{displaymath}
+\begin{displaymath}
+=\begin{pmatrix}
+2\times 2+3\times(-1)+1\times 3 & 2\times 1+3\times 1+1\times (-2)\\
+-1\times 2+0\times(-1)+1\times 3 & -1\times 1+0\times 1+1\times (-2)\\
+\end{pmatrix}
+\end{displaymath}
+\begin{displaymath}
+C=A\times B =\begin{pmatrix}
+4 & 3 \\
+1 & -3 \\
+\end{pmatrix}
+\end{displaymath}
+Ответ:\begin{displaymath}
+C=\begin{pmatrix}
+4 & 3 \\
+1 & -3 \\
+\end{pmatrix}
+\end{displaymath}
+
+\section{Пример 3. Транспонирование матрицы}
+\textbf{Дано:} \\
+Матрица
+\begin{displaymath}
+A=\begin{pmatrix}
+7 & 8 & 9\\
+1 & 2 & 3 
+\end{pmatrix}
+\end{displaymath}
+\textbf{Найти:}\\
+Найти матрицу транспонированную данной.\\
+$A^T$ -- ?\\
+\textbf{Решение:}\\
+Транспонирование матрицы $А$ заключается в замене строк этой матрицы ее столбцами с сохранением номеров. Полученная матрица обозначается через $A^T$.
+\begin{displaymath}
+A=\begin{pmatrix}
+7 & 8 & 9\\
+1 & 2 & 3 
+\end{pmatrix}\Rightarrow A^T= \begin{pmatrix}
+7 & 1\\
+8 & 2\\
+9 & 3
+\end{pmatrix}
+\end{displaymath}
+Ответ:\begin{displaymath}
+A^T=
+\begin{pmatrix}
+7 & 1\\
+8 & 2\\
+9 & 3
+\end{pmatrix}
+\end{displaymath}
+
+\section{Пример 4. Обратная матрица}
+\textbf{Дано:} \\
+Матрица
+\begin{displaymath}
+A=\begin{pmatrix}
+2 & -1\\
+3 & 1
+\end{pmatrix}
+\end{displaymath}
+\textbf{Найти:}\\
+Найти обратную матрицу для матрицы $A$.\\
+$A^{-1}$ -- ?\\
+\textbf{Решение:}\\
+Находим $det A$ и проверяем $det A\ne 0$:
+\begin{displaymath}
+det A=\begin{vmatrix}
+2 & -1\\
+3 & 1
+\end{vmatrix}=2\times 1-3\times(-1)=5
+\end{displaymath}
+$det A=5\ne 0.$\\
+Составляем вспомогательную матрицу $a^V$ из алгебраических дополнений $A_{ij}$:
+\begin{displaymath}
+A^V=\begin{pmatrix}
+1 & -3\\
+1 & 2
+\end{pmatrix}
+\end{displaymath}
+Транспонируем матрицу $A^V$:
+\begin{displaymath}
+(A^V)^T=\begin{pmatrix}
+1 & 1\\
+-3 & 2
+\end{pmatrix}
+\end{displaymath}
+Каждый элемент полученной матрицы делим на $det A$:
+\begin{displaymath}
+A^{-1}=\frac{1}{detA}(A^V)^T=\frac{1}{5}\times \begin{pmatrix}
+1 & 1\\
+-3 & 2
+\end{pmatrix}=\begin{pmatrix}
+\frac{1}{5} & \frac{1}{5}\\
+-\frac{3}{5} & \frac{2}{5}
+\end{pmatrix}
+\end{displaymath}
+Ответ:\begin{displaymath}
+A^{-1}=\begin{pmatrix}
+\frac{1}{5} & \frac{1}{5}\\
+-\frac{3}{5} & \frac{2}{5}
+\end{pmatrix}
+\end{displaymath}
+\end{document}

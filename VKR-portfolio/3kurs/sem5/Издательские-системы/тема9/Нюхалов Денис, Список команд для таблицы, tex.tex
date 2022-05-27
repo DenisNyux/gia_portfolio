@@ -1,0 +1,44 @@
+% "ИСР"
+
+\documentclass[a4paper,12pt]{article} % тип документа
+
+%  Русский язык
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}		
+\usepackage[english,russian]{babel}	
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+\usepackage{wasysym}
+\usepackage{hyperref} % гиперссылки
+%Заговолок
+\author{Нюхалов Денис}
+\title{Cписок команд для создания таблиц в \LaTeX{}}
+\date{Декабрь 2020}
+
+
+\begin{document} % начало документа
+
+\maketitle
+\newpage
+
+\section{Основные команды}
+
+\begin{itemize}
+    \item Таблицы создаются при помощи окружения tabular\\\\
+    \textbackslash begin \{tabular\}[положение]\{столбцы\}\\ \textbackslash end\{tabular\}
+    \item В tabular важную роль играет атрибут положение. Именно он определяет налчичие границ у таблицы, align к левой или правой ячейки таблицы
+    \item Расположение в документе и заголовки задаются в окружении table\\\\
+    \textbackslash begin\{table\} \textbackslash end\{tabular\}
+    \item Таблица заполняется в соответсвии с указанным в окружении tabular положением. Для разделения элементов таблиц по столбцам используется амперсант (\&)\\\\
+    \textbackslash begin \{tabular\}[положение]\{столбцы\}\\
+    элемент \& элемент \& элемент\\
+    \textbackslash end\{tabular\}
+    \item Для перехода на следующую строку используется команда \textbackslash hline \\\\
+    \textbackslash begin \{tabular\}[положение]\{столбцы\}\\
+    элемент \& элемент \& элемент\\
+    \textbackslash hline\\
+    элемент \& элемент \& элемент\\
+    \textbackslash end\{tabular\}
+    
+\end{itemize}
+\end{document}

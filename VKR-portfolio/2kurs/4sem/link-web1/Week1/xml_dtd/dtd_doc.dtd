@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT portfolio (competencies)>
+<!ELEMENT competencies (competency+)>
+<!ELEMENT competency (#PCDATA)>
+
+<!ATTLIST competency in CDATA #REQUIRED>
+<!ATTLIST competency value CDATA #REQUIRED>

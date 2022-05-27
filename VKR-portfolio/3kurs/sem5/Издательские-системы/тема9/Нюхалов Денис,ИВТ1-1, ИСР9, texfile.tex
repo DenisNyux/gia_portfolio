@@ -1,0 +1,56 @@
+\documentclass[a4paper,12pt]{article} % тип документа
+
+%  Русский язык
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+\usepackage{wasysym}
+\usepackage{hyperref} % гиперссылки
+
+%Заговолок
+\author{Нюхалов Денис}
+\title{Инвариантная лабораторная работа\\"Таблица Интегралов и дифференциалов"}
+\date{Декабрь 2020}
+
+\begin{document} % начало документа
+\maketitle
+\newpage
+\section{Таблица интегралов}
+\begin{table}
+\begin{tabular}{|c|c|}
+\hline 
+Интегралы & Дифференциалы\\
+\hline
+$ \int{} 0 \cdot dx = C$  & $dc=0, C = const$\\
+\hline
+$ \int{} dx = \int{} 1\cdot dx = x + C$ & $d(x^n)= nx^{n-1}dx$\\
+\hline
+$ \int{} x^n \cdot dx = 1\cdot dx = \frac{x^{n+1}}{n+1}+C, n\neq-1, x>0$ & $d(a^x)=a^x\cdot \ln a \cdot dx$ \\
+\hline
+$ \int{} \frac{dx}{x}= \ln|x| + C $ & $d(e^x)=e^x dx$\\
+\hline
+$ \int{}a^x dx=\frac{a^x}{\ln a} + C$ & $d(log_a x)=\frac{dx}{x\ln a}$\\
+\hline
+$ \int{}e^x dx = e^x + C$ & $d(\ln x)=\frac{dx}{x}$\\
+\hline
+$ \int{} \sin xdx = -\cos x+C$ & $d(\sin x)=\cos xdx$\\
+\hline
+$ \int{} \cos xdx = \sin x +C $ & $d(\cos x)=-\sin xdx$\\
+\hline
+$ \int{} \frac{dx}{\sin ^2 x} = -\cot x + C$ & $d(\sqrt{x})=\frac{dx}{2\sqrt{x}}$\\
+\hline
+$ \int{} \frac{dx}{\cos ^2 x} = -\tan x + C$ & $d(\tan x)=\frac{dx}{\cos ^2 x}$\\
+\hline
+$ \int{} \frac{dx}{\sqrt{a^2-x^2}} = arcsin \frac{x}{a} + C, |x|<|a|$ & $d(\cot x)=-\frac{dx}{\sin ^2 x}$\\
+\hline
+$ \int{} \frac{dx}{a^2+x^2} = \frac{1}{a}arctg\frac{x}{a} + C$ & $d(arcsin x)=\frac{dx}{\sqrt{1-x^2}}$\\
+\hline
+$ \int{} \frac{dx}{a^2-x^2} = \frac{1}{2a}ln |\frac{a+x}{a-x}| + C, |x|neq a$ & $d(arccos x)=-\frac{dx}{\sqrt{1-x^2}}$\\
+\hline
+$ \int{} \frac{dx}{\sqrt{x^2\pm a^2}} = \ln |x+\sqrt{x^2\pm a^2}| + C$ & $d(arctg x)=\frac{dx}{1+x^2}$\\
+\hline
+\end{tabular}
+\end{table}
+\end{document}
